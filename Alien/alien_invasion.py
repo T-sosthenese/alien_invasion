@@ -1,8 +1,12 @@
 import sys
 import pygame
+import os
 
 from settings import Settings
 from ship import Ship
+
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+os.environ['SDL_AUDIODRIVER'] = "dummy"
 
 
 def run_game():
